@@ -25,13 +25,17 @@ int main() {
     de cada cidade para obter: código da cidade(CodC),
     nome(NomeE), população(Popu), área(Area), PIB(PIB), número de pontos turísticos(PonTu).*/
 
-    char CodC1[3], CodC2[3], CodC3[3], CodC4[3], CodC5[3], CodC6[3], CodC7[3], CodC8[3], CodC9[3], CodC10[3], CodC11[3], CodC12[3], CodC13[3], CodC14[3], CodC15[3], CodC16[3], CodC17[3], CodC18[3], CodC19[3], CodC20[3], CodC21[3], CodC22[3], CodC23[3], CodC24[3], CodC25[3], CodC26[3], CodC27[3], CodC28[3], CodC29[3], CodC30[3], CodC31[3], Cod32[3];
+    char CodC1[3], CodC2[3], CodC3[3], CodC4[3], CodC5[3], CodC6[3], CodC7[3], CodC8[3], CodC9[3], CodC10[3], CodC11[3], CodC12[3], CodC13[3], CodC14[3], CodC15[3], CodC16[3], CodC17[3], CodC18[3], CodC19[3], CodC20[3], CodC21[3], CodC22[3], CodC23[3], CodC24[3], CodC25[3], CodC26[3], CodC27[3], CodC28[3], CodC29[3], CodC30[3], CodC31[3], CodC32[3];
     char NomeE1[20], NomeE2[20], NomeE3[20], NomeE4[20], NomeE5[20], NomeE6[20], NomeE7[20], NomeE8[20], NomeE9[20], NomeE10[20], NomeE11[20], NomeE12[20], NomeE13[20], NomeE14[20], NomeE15[20], NomeE16[20], NomeE17[20], NomeE18[20], NomeE19[20], NomeE20[20], NomeE21[20], NomeE22[20], NomeE23[20], NomeE24[20], NomeE25[20], NomeE26[20], NomeE27[20], NomeE28[20], NomeE29[20], NomeE30[20], NomeE31[20], NomeE32[20];
-    int Popu1, Popu2, Popu3, Popu4, Popu5, Popu6, Popu7, Popu8, Popu9, Popu10, Popu11, Popu12, Popu13, Popu14, Popu15, Popu16, Popu17, Popu18, Popu19, Popu20, Popu21, Popu22, Popu23, Popu24, Popu25, Popu26, Popu27, Popu28, Popu28, Popu29, Popu30, Popu31, Popu32;
+    int Popu1, Popu2, Popu3, Popu4, Popu5, Popu6, Popu7, Popu8, Popu9, Popu10, Popu11, Popu12, Popu13, Popu14, Popu15, Popu16, Popu17, Popu18, Popu19, Popu20, Popu21, Popu22, Popu23, Popu24, Popu25, Popu26, Popu27, Popu28, Popu29, Popu30, Popu31, Popu32;
     int PonTu1, PonTu2, PonTu3, PonTu4, PonTu5, PonTu6, PonTu7, PonTu8, PonTu9, PonTu10, PonTu11, PonTu12, PonTu13, PonTu14, PonTu15, PonTu16, PonTu17, PonTu18, PonTu19, PonTu20, PonTu21, PonTu22, PonTu23, PonTu24, PonTu25, PonTu26, PonTu27, PonTu28, PonTu29, PonTu30, PonTu31, PonTu32;
     float Area1, Area2, Area3, Area4, Area5, Area6, Area7, Area8, Area9, Area10, Area11, Area12, Area13, Area14, Area15, Area16, Area17, Area18, Area19, Area20, Area21, Area22, Area23, Area24, Area25, Area26, Area27, Area28, Area29, Area30, Area31, Area32;
     float PIB1, PIB2, PIB3, PIB4, PIB5, PIB6, PIB7, PIB8, PIB9, PIB10, PIB11, PIB12, PIB13, PIB14, PIB15, PIB16, PIB17, PIB18, PIB19, PIB20, PIB21, PIB22, PIB23, PIB24, PIB25, PIB26, PIB27, PIB28, PIB29, PIB30, PIB31, PIB32;
-    
+    float DenPo1, DenPo2, DenPo3, DenPo4, DenPo5, DenPo6, DenPo7, DenPo8, DenPo9, DenPo10, DenPo11, DenPo12, DenPo13, DenPo14, DenPo15, DenPo16, DenPo17, DenPo18, DenPo19, DenPo20, DenPo21, DenPo22, DenPo23, DenPo24, DenPo25, DenPo26, DenPo27, DenPo28, DenPo29, DenPo30, DenPo31, DenPo32;
+    float PIBC1, PIBC2, PIBC3, PIBC4, PIBC5, PIBC6, PIBC7, PIBC8, PIBC9, PIBC10, PIBC11, PIBC12, PIBC13, PIBC14, PIBC15, PIBC16, PIBC17, PIBC18, PIBC19, PIBC20, PIBC21, PIBC22, PIBC23, PIBC24, PIBC25, PIBC26, PIBC27, PIBC28, PIBC29, PIBC30, PIBC31, PIBC32;
+
+
+
     /*Esse é o bloco de cadastro das cartas, onde utilizando os conceitos apresentados em aula
     o código realiza um serie de perguntus sobre cada uma das caracateristicas das 32 cidades*/
 
@@ -40,6 +44,8 @@ int main() {
     execução do código, onde se trata de fregmento "%[^\n]". Sua utilidade
     consiste em formatar uma string, salvando seu conteundo em uma variavel,
     até que encontre oque está apos o sinal "^"*/
+
+
 
     // Código para a primeira cidade
     printf("Insira o código da primeira cidade:\n");
@@ -84,7 +90,7 @@ int main() {
     scanf("%d", &PonTu3);
     
     // Código para a quarta cidade
-    printf("Insira o código da quarta cidade:\n");
+    /*printf("Insira o código da quarta cidade:\n");
     scanf("%s", CodC4);
     printf("Insira o nome da quarta cidade:\n");
     scanf(" %[^\n]", NomeE4);
@@ -477,7 +483,7 @@ int main() {
 
     // Código para a vigésima oitava cidade
     printf("Insira o código da vigésima oitava cidade:\n");
-    scanf("%s", CodC23);
+    scanf("%s", CodC32);
     printf("Insira o nome da vigésima oitava cidade:\n");
     scanf(" %[^\n]", NomeE32);
     printf("Insira a população da vigésima oitava cidade:\n");
@@ -487,12 +493,83 @@ int main() {
     printf("Insira o PIB da vigésima oitava cidade:\n");
     scanf("%f", &PIB32);
     printf("Insira o número de pontos turísticos da vigésima oitava cidade:\n");
-    scanf("%d", &PonTu32);
+    scanf("%d", &PonTu32);*/
 
-    printf("1° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC1, NomeE1, Popu1, Area1, PIB1, PonTu1);
-    printf("2° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC2, NomeE2, Popu2, Area2, PIB2, PonTu2);
-    printf("3° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC3, NomeE3, Popu3, Area3, PIB3, PonTu3);
-    printf("4° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC4, NomeE4, Popu4, Area4, PIB4, PonTu4);
+
+
+    /*Esse bloco de código ir realizar os calculos: densidade Populacional e PIB per Capita, das carta*/
+    DenPo1 = Popu1 / Area1;
+    DenPo2 = Popu2 / Area2;
+    DenPo3 = Popu3 / Area3;
+    DenPo4 = Popu4 / Area4;
+    DenPo5 = Popu5 / Area5;
+    DenPo6 = Popu6 / Area6;
+    DenPo7 = Popu7 / Area7;
+    DenPo8 = Popu8 / Area8;
+    DenPo9 = Popu9 / Area9;
+    DenPo10 = Popu10 / Area10;
+    DenPo11 = Popu11 / Area11;
+    DenPo12 = Popu12 / Area12;
+    DenPo13 = Popu13 / Area13;
+    DenPo14 = Popu14 / Area14;
+    DenPo15 = Popu15 / Area15;
+    DenPo16 = Popu16 / Area16;
+    DenPo17 = Popu17 / Area17;
+    DenPo18 = Popu18 / Area18;
+    DenPo19 = Popu19 / Area19;
+    DenPo20 = Popu20 / Area20;
+    DenPo21 = Popu21 / Area21;
+    DenPo22 = Popu22 / Area22;
+    DenPo23 = Popu23 / Area23;
+    DenPo24 = Popu24 / Area24;
+    DenPo25 = Popu25 / Area25;
+    DenPo26 = Popu26 / Area26;
+    DenPo27 = Popu27 / Area27;
+    DenPo28 = Popu28 / Area28;
+    DenPo29 = Popu29 / Area29;
+    DenPo30 = Popu30 / Area30;
+    DenPo31 = Popu31 / Area31;
+    DenPo32 = Popu32 / Area32;
+
+    PIBC1 = PIB1 / Popu1;
+    PIBC2 = PIB2 / Popu2;
+    PIBC3 = PIB3 / Popu3;
+    PIBC4 = PIB4 / Popu4;
+    PIBC5 = PIB5 / Popu5;
+    PIBC6 = PIB6 / Popu6;
+    PIBC7 = PIB7 / Popu7;
+    PIBC8 = PIB8 / Popu8;
+    PIBC9 = PIB9 / Popu9;
+    PIBC10 = PIB10 / Popu10;
+    PIBC11 = PIB11 / Popu11;
+    PIBC12 = PIB12 / Popu12;
+    PIBC13 = PIB13 / Popu13;
+    PIBC14 = PIB14 / Popu14;
+    PIBC15 = PIB15 / Popu15;
+    PIBC16 = PIB16 / Popu16;
+    PIBC17 = PIB17 / Popu17;
+    PIBC18 = PIB18 / Popu18;
+    PIBC19 = PIB19 / Popu19;
+    PIBC20 = PIB20 / Popu20;
+    PIBC21 = PIB21 / Popu21;
+    PIBC22 = PIB22 / Popu22;
+    PIBC23 = PIB23 / Popu23;
+    PIBC24 = PIB24 / Popu24;
+    PIBC25 = PIB25 / Popu25;
+    PIBC26 = PIB26 / Popu26;
+    PIBC27 = PIB27 / Popu27;
+    PIBC28 = PIB28 / Popu28;
+    PIBC29 = PIB29 / Popu29;
+    PIBC30 = PIB30 / Popu30;
+    PIBC31 = PIB31 / Popu31;
+    PIBC32 = PIB32 / Popu32;
+
+
+
+    printf("1° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: R$%.2f Milhões\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f Hab/Km²\nPIB per Capita: R$%.2f\n", CodC1, NomeE1, Popu1, Area1, PIB1, PonTu1, DenPo1, PIBC1);
+    printf("2° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: R$%.2f Milhões\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f Hab/Km²\nPIB per Capita: R$%.2f\n", CodC2, NomeE2, Popu2, Area2, PIB2, PonTu2, DenPo2, PIBC2);
+    printf("3° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: R$%.2f Milhões\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f Hab/Km²\nPIB per Capita: R$%.2f\n", CodC3, NomeE3, Popu3, Area3, PIB3, PonTu3, DenPo3, PIBC3);
+    /*printf("4° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC4, NomeE4, Popu4, Area4, PIB4, PonTu4);
     printf("5° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC5, NomeE5, Popu5, Area5, PIB5, PonTu5);
     printf("6° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC6, NomeE6, Popu6, Area6, PIB6, PonTu6);
     printf("7° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC7, NomeE7, Popu7, Area7, PIB7, PonTu7);
@@ -520,7 +597,7 @@ int main() {
     printf("29° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC29, NomeE29, Popu29, Area29, PIB29, PonTu29);
     printf("30° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC30, NomeE30, Popu30, Area30, PIB30, PonTu30);
     printf("31° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC31, NomeE31, Popu31, Area31, PIB31, PonTu31);
-    printf("32° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC23, NomeE32, Popu32, Area32, PIB32, PonTu32);
+    printf("32° Carta\n%s\n%s\nPopulação: %d Milhões\nÁrea: %.2f Km²\nPIB: %.2f Milhões\nNúmero de Pontos Turísticos: %d\n", CodC32, NomeE32, Popu32, Area32, PIB32, PonTu32);*/
 
     return 0;
 }
